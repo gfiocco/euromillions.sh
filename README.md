@@ -6,13 +6,13 @@ Discover whether you are a EuroMillions winner by comparing your numbers against
 
 `euromillions.sh` is a simple shell script using the [draw history](https://www.national-lottery.co.uk/results/euromillions/draw-history/csv) of [national-lottery.co.uk](https://www.national-lottery.co.uk/) as a data source.
 
-<!-- ![euromillions.sh](https://raw....) -->
+![euromillions.sh](https://raw.githubusercontent.com/gfiocco/euromillions.sh/master/instructions.gif)
 
 ## Usage
 
 ```sh
 # Install
-$ curl -o ticker.sh https://raw.githubus....
+curl -o euromillions.sh https://raw.githubusercontent.com/gfiocco/euromillions.sh/master/euromillions.sh
 
 # Allow execution
 chmod 770 ./euromillions.sh
