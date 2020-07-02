@@ -1,0 +1,11 @@
+{
+  "name": "euromillions-checker",
+  "version": "1.0.0",
+  "description": "EuroMillions Checker Discover whether you are a EuroMillions winner by comparing your numbers against the results from the past 180 days.",
+  "main": "euromillions.sh",
+  "scripts": {
+    "test": "./euromillions.sh 5 7 8 16 20 2 12"
+  },
+  "author": "gfiocco",
+  "license": "ISC"
+}
