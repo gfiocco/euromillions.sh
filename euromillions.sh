@@ -61,19 +61,19 @@ echo "$RESULTS" | tail -n +2 | while read line; do
 
 	# notify any winning match
 	matching_string="${matching_list[@]:0:5} | ${matching_list[@]:5:2}"
-	if [ $matching_count -eq 5 -a $luckystars_count -eq 2 ] ; then   printf "${result[0+INDEX_START]} - Match 5 + 2 for draw ${result[9+$INDEX_START]} >£30m win  ($matching_string) markert:${result[8+INDEX_START]}\n"
-	elif [ $matching_count -eq 5 -a $luckystars_count -eq 1 ] ; then printf "${result[0+INDEX_START]} - Match 5 + 1 for draw ${result[9+$INDEX_START]} ~£100k win ($matching_string) markert:${result[8+INDEX_START]}\n"
-	elif [ $matching_count -eq 5 -a $luckystars_count -eq 0 ] ; then printf "${result[0+INDEX_START]} - Match 5 + 0 for draw ${result[9+$INDEX_START]} ~£10k win  ($matching_string) markert:${result[8+INDEX_START]}\n"
-	elif [ $matching_count -eq 4 -a $luckystars_count -eq 2 ] ; then printf "${result[0+INDEX_START]} - Match 4 + 2 for draw ${result[9+$INDEX_START]} ~£1k win   ($matching_string) markert:${result[8+INDEX_START]}\n"
-	elif [ $matching_count -eq 4 -a $luckystars_count -eq 1 ] ; then printf "${result[0+INDEX_START]} - Match 4 + 1 for draw ${result[9+$INDEX_START]} ~£100 win  ($matching_string) markert:${result[8+INDEX_START]}\n"
-	elif [ $matching_count -eq 3 -a $luckystars_count -eq 2 ] ; then printf "${result[0+INDEX_START]} - Match 3 + 2 for draw ${result[9+$INDEX_START]} ~£50 win   ($matching_string) markert:${result[8+INDEX_START]}\n"
-	elif [ $matching_count -eq 4 -a $luckystars_count -eq 0 ] ; then printf "${result[0+INDEX_START]} - Match 4 + 0 for draw ${result[9+$INDEX_START]} ~£25 win   ($matching_string) markert:${result[8+INDEX_START]}\n"
-	elif [ $matching_count -eq 2 -a $luckystars_count -eq 2 ] ; then printf "${result[0+INDEX_START]} - Match 2 + 2 for draw ${result[9+$INDEX_START]} ~£10 win   ($matching_string) markert:${result[8+INDEX_START]}\n"
-	elif [ $matching_count -eq 3 -a $luckystars_count -eq 1 ] ; then printf "${result[0+INDEX_START]} - Match 3 + 1 for draw ${result[9+$INDEX_START]} ~£7 win    ($matching_string) markert:${result[8+INDEX_START]}\n"
-	elif [ $matching_count -eq 3 -a $luckystars_count -eq 0 ] ; then printf "${result[0+INDEX_START]} - Match 3 + 0 for draw ${result[9+$INDEX_START]} ~£6 win    ($matching_string) markert:${result[8+INDEX_START]}\n"
-	elif [ $matching_count -eq 1 -a $luckystars_count -eq 2 ] ; then printf "${result[0+INDEX_START]} - Match 1 + 2 for draw ${result[9+$INDEX_START]} ~£4.30 win ($matching_string) markert:${result[8+INDEX_START]}\n"
-	elif [ $matching_count -eq 2 -a $luckystars_count -eq 1 ] ; then printf "${result[0+INDEX_START]} - Match 2 + 1 for draw ${result[9+$INDEX_START]} ~£3.60 win ($matching_string) markert:${result[8+INDEX_START]}\n"
-	elif [ $matching_count -eq 2 -a $luckystars_count -eq 0 ] ; then printf "${result[0+INDEX_START]} - Match 2 + 0 for draw ${result[9+$INDEX_START]} ~£2.50 win ($matching_string) markert:${result[8+INDEX_START]}\n"
+	if [ $matching_count -eq 5 -a $luckystars_count -eq 2 ] ; then   printf "${result[0+INDEX_START]} - Match 5 + 2 for draw ${result[9+$INDEX_START]} >£30m win  ($matching_string) Marker:${result[8+INDEX_START]}\n"
+	elif [ $matching_count -eq 5 -a $luckystars_count -eq 1 ] ; then printf "${result[0+INDEX_START]} - Match 5 + 1 for draw ${result[9+$INDEX_START]} ~£100k win ($matching_string) Marker:${result[8+INDEX_START]}\n"
+	elif [ $matching_count -eq 5 -a $luckystars_count -eq 0 ] ; then printf "${result[0+INDEX_START]} - Match 5 + 0 for draw ${result[9+$INDEX_START]} ~£10k win  ($matching_string) Marker:${result[8+INDEX_START]}\n"
+	elif [ $matching_count -eq 4 -a $luckystars_count -eq 2 ] ; then printf "${result[0+INDEX_START]} - Match 4 + 2 for draw ${result[9+$INDEX_START]} ~£1k win   ($matching_string) Marker:${result[8+INDEX_START]}\n"
+	elif [ $matching_count -eq 4 -a $luckystars_count -eq 1 ] ; then printf "${result[0+INDEX_START]} - Match 4 + 1 for draw ${result[9+$INDEX_START]} ~£100 win  ($matching_string) Marker:${result[8+INDEX_START]}\n"
+	elif [ $matching_count -eq 3 -a $luckystars_count -eq 2 ] ; then printf "${result[0+INDEX_START]} - Match 3 + 2 for draw ${result[9+$INDEX_START]} ~£50 win   ($matching_string) Marker:${result[8+INDEX_START]}\n"
+	elif [ $matching_count -eq 4 -a $luckystars_count -eq 0 ] ; then printf "${result[0+INDEX_START]} - Match 4 + 0 for draw ${result[9+$INDEX_START]} ~£25 win   ($matching_string) Marker:${result[8+INDEX_START]}\n"
+	elif [ $matching_count -eq 2 -a $luckystars_count -eq 2 ] ; then printf "${result[0+INDEX_START]} - Match 2 + 2 for draw ${result[9+$INDEX_START]} ~£10 win   ($matching_string) Marker:${result[8+INDEX_START]}\n"
+	elif [ $matching_count -eq 3 -a $luckystars_count -eq 1 ] ; then printf "${result[0+INDEX_START]} - Match 3 + 1 for draw ${result[9+$INDEX_START]} ~£7 win    ($matching_string) Marker:${result[8+INDEX_START]}\n"
+	elif [ $matching_count -eq 3 -a $luckystars_count -eq 0 ] ; then printf "${result[0+INDEX_START]} - Match 3 + 0 for draw ${result[9+$INDEX_START]} ~£6 win    ($matching_string) Marker:${result[8+INDEX_START]}\n"
+	elif [ $matching_count -eq 1 -a $luckystars_count -eq 2 ] ; then printf "${result[0+INDEX_START]} - Match 1 + 2 for draw ${result[9+$INDEX_START]} ~£4.30 win ($matching_string) Marker:${result[8+INDEX_START]}\n"
+	elif [ $matching_count -eq 2 -a $luckystars_count -eq 1 ] ; then printf "${result[0+INDEX_START]} - Match 2 + 1 for draw ${result[9+$INDEX_START]} ~£3.60 win ($matching_string) Marker:${result[8+INDEX_START]}\n"
+	elif [ $matching_count -eq 2 -a $luckystars_count -eq 0 ] ; then printf "${result[0+INDEX_START]} - Match 2 + 0 for draw ${result[9+$INDEX_START]} ~£2.50 win ($matching_string) Marker:${result[8+INDEX_START]}\n"
 	fi
 
 done
